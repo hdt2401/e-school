@@ -9,7 +9,6 @@ import { todoListByFilter } from '../../redux/selectors';
 export default function TodoList() {
   const dispatch = useDispatch();
   const todoList = useSelector(todoListByFilter);
-  console.log(todoList);
   const [todo, setTodo] = useState('');
   const [priority, setPriority] = useState('Medium');
   const handleTodoChange = (e) => {
@@ -32,7 +31,7 @@ export default function TodoList() {
     <Row style={{ height: 'calc(100% - 40px)' }}>
       <Col span={24} style={{ height: 'calc(100% - 40px)', overflowY: 'auto' }}>
         {todoList.map((todo) => (
-          <Todo name={todo.name} prioriry={todo.priority} key={todo.id} />
+          <Todo todo={todo} key={todo.id} />
         ))}
       </Col>
       <Col span={24}>
