@@ -1,13 +1,13 @@
-import { combineReducers } from "redux";
-import filterReducer from "../components/Filters/FilterSlice";
-import todoReducer from "../components/TodoList/TodoSlice";
+// import { combineReducers } from "redux";
+// import filterReducer from "../components/Filters/FilterSlice";
+// import todoReducer from "../components/TodoList/TodoSlice";
 
-const rootReducer =combineReducers({
-  filters: filterReducer,
-  todoList: todoReducer,
-})
+// const rootReducer =combineReducers({
+//   filters: filterReducer,
+//   todoList: todoReducer,
+// })
 
-export default rootReducer;
+// export default rootReducer;
 // const initState = {
 //   filters: {
 //     search: '',
