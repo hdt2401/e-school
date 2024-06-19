@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 //   completedFilter,
 //   priorityFilter,
 // } from "../../redux/actions";
-import filterSlice from "./filterSlice";
+// import filterSlice from "./filterSlice";
 const { Search } = Input;
 
 export default function Filters() {

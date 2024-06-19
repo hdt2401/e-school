@@ -35,8 +35,8 @@ function App() {
   const [darkMode, setDarMode] = useState(false);
   useEffect(() => {
     fetch("/api/todos")
-      .then((res) => res.json())
-      .then((res) => console.log(res));
+      // .then((res) => res.json())
+      .then((json) => console.log(json));
   }, []);
 
   const handleChangeTheme = () => {
