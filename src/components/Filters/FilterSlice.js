@@ -26,7 +26,6 @@
 // };
 
 // export default filterReducer;
-
 import { createSlice } from "@reduxjs/toolkit";
 
 export default createSlice({
